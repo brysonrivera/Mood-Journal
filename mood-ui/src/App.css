@@ -7,6 +7,16 @@ body {
   text-align: center;
 }
 
+.Journal-Entry {
+  height: 250px;
+  width: 50vw;
+  font: 20px "Times New Roman", Times, serif;
+}
+
+button {
+  margin: 25px;
+}
+
 h1 {
   color: #78290f;
 }
