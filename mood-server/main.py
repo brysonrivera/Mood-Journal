@@ -1,7 +1,5 @@
 # to run server type in uvicorn main:app --reload
-from typing import Optional
-
-from fastapi import Request, FastAPI
+from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -17,7 +15,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-my_api_key = os.getenv("API_KEY")
+my_api_key = os.getenv("GIPHY_API_KEY")
 
 app = FastAPI()
 
@@ -53,3 +51,13 @@ def retrieve_gif(mood: str):
     data = requests.get("https://api.giphy.com/v1/gifs/search", params=payload)
     gif = data.json()
     return gif
+
+
+@app.get("/quote")
+def retrieve_quote(mood):
+    if type(mood) != str:
+        return {"err": "Path must be a string. Please re-enter a valid mood."}
+    response = requests.get(
+        "https://quote-generator-app-kc.herokuapp.com/" + mood)
+    quote = response.json()
+    return quote
