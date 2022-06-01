@@ -1,0 +1,27 @@
+{
+    "users": [
+        {
+            "email": "example@example.com",
+            "firstName": "John",
+            "lastName": "Doe",
+            "logs": [
+                {
+                    "entry": "I love my life",
+                    "quote": "Today has been great!!!",
+                    "gif": "funny.gif",
+                    "sentiment": ".75",
+                    "mood": "positive",
+                    "date": "Type: Date.now()"
+                },
+                {
+                    "entry": "Today has been rough",
+                    "quote": "Not fun ):",
+                    "gif": "frustrated.gif",
+                    "sentiment": "-.75",
+                    "mood": "positive",
+                    "date": "Type: Date.now()"
+                }
+            ]
+        }
+    ]
+}

@@ -2,9 +2,20 @@
   text-align: center;
 }
 
+#root {
+  height: 100%;
+}
+
+html,
 body {
+  height: 100%;
   background-color: #e9d8a6;
+  margin: 0;
   text-align: center;
+}
+
+textarea {
+  margin: 10px;
 }
 
 .Journal-Entry {
@@ -14,17 +25,18 @@ body {
   border-color: #9b2226;
 }
 
-button {
+.btn {
   margin: 25px;
 }
 
 h1 {
-  color: #9b2226;
+  color: #001219;
+  margin: 50px;
 }
 
 p {
   text-align: center;
-  color: #9b2226;
+  color: #001219;
 }
 
 table {
@@ -38,6 +50,16 @@ table {
 
 tr:hover {
   background-color: #e9ecef;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.results-item {
+  margin: 40px;
 }
 
 th,
@@ -58,6 +80,10 @@ td {
 
 }
 
+.navbar {
+  background-color: #ca6702;
+}
+
 .nav-container {
   background-color: #bb3e03;
   overflow: hidden;
@@ -74,21 +100,56 @@ td {
   border-collapse: collapse;
 }
 
-.nav-item:hover {
-  background-color: #005f73;
+.nav-link,
+.navbar-brand {
+  color: black;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
   color: white;
 }
 
-.nav-container a {
-
-  color: #f2f2f2;
-  text-align: justify;
-  font-size: 25px;
-  text-decoration: none;
-  width: 100%;
+.alert {
+  margin: 0 auto;
+  width: 50%;
 }
 
-Link {
-  text-decoration: none;
-  background-color: #005f73;
+.characters {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: end;
+}
+
+.form-control {
+  margin: 0 auto;
+}
+
+.outer-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  border: 1px solid#005f73;
+  padding: 10px;
+}
+
+
+.form-label {
+  float: left;
+  margin: 5px;
+}
+
+.open-eye {
+  float: right;
+  font-size: 20px;
+}
+
+#forgot-password {
+  float: left;
 }
