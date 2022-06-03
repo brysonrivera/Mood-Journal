@@ -1,5 +1,5 @@
-const Positive = ["positive", "delighted", "ecstatic", "elated", "glad", "joyful", "lively", "pleasant"]
-const Neutral = ["disinterested", "fair-minded", "indifferent", "collected", "calm", "dispassionate"]
-const Negative = ["adverse", "gloomy", "pessimistic", "weak", "colorless"]
+const Positive = ["positive", "delighted", "ecstatic", "glad", "joyful", "pleasant"]
+const Neutral = ["disinterested", "fair-minded", "collected", "calm", "dispassionate"]
+const Negative = ["adverse", "gloomy", "pessimistic", "colorless"]
 
 export { Positive, Neutral, Negative }
